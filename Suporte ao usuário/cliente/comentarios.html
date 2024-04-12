@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+
+<head>
+    <title>Comentários</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="phone.png" type="image/x-icon">
+</head>
+
+<body onload="listarProblemas()">
+
+    <div class="container text-center">
+        <div class="m-5">  
+            <div class="d-flex justify-content-center mb-5">
+                <div id="fundo" class="p-1 rounded mx-5 w-50">
+                    <h2 class="m-5 title rounded text-white p-1">Comentários feitos</h2>
+                </div>
+            </div>
+            <a href="consulta.html">
+                <button class="btn btn-dark">Voltar</button>
+            </a>
+        </div>
+        <form class="form">
+
+            <div class="card">
+
+                <div class="card__content">
+                    <table id="tabela">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>NOME</th>
+                                <th>CPF</th>
+                                <th>STATUS</th>
+                                <th>EDITAR</th>
+                                <th>EXCLUIR</th>
+                            </tr>
+                        </thead>
+                        <tbody id="dados_tabela">
+
+                        </tbody>
+                    </table>
+                </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>

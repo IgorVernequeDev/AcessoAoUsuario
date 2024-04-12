@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Fazer um novo chamado</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+  <link rel="shortcut icon" href="phone.png" type="image/x-icon">
+</head>
+
+<body>
+
+  <div class="container text-center form-container">
+    <h2 class="mt-5 title">Cadastro de usuário</h2>
+
+    <form class="form" id="formulario" method="post" onsubmit="enviarDados(event)">
+
+      <div class="input-container form-group text-center">
+        <label for="cpf" class="subtitle">CPF:</label>
+        <input placeholder="Escreva seu CPF 000.000.000-00..." type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' id="cpf" name="cpf" maxlength="11" required>
+        </div>
+
+            <div class="d-grid gap-2 col-6 mx-auto" style="width: 100px;">
+              <button type="submit" class="btn btn-dark mt-5">Enviar</button>
+            </div>
+    </form>
+  </div>
+
+</body>
+
+</html>

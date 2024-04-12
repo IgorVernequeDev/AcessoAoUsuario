@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+    <title>Minhas Chamadas</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="phone.png" type="image/x-icon">
+</head>
+
+<body onload="listarProblemas()">
+
+    <header>
+        <nav class="navbar navbar-expand-lg shadow border-bottom border-3 border-dark border-opacity-25 p-3"
+            style=" background-color: black;">
+            <div class="container mr-5">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-telephone-fill mr-3" style="color:#fff " viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                </svg>
+                <a class="navbar-brand text-light fw-bolder" href="#">Suporte ao Cliente</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" data-bs-theme="dark" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Lista de links na barra de navegação -->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-light fw-semibold" aria-current="page" href="#">Principal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light fw-semibold" aria-current="page" href="#">Quem somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light fw-semibold" aria-current="page" href="#">Contatos</a>
+                        </li>
+                    </ul>
+                    <!-- Formulário de pesquisa -->
+                    <form class="d-flex ml-3 pl-2" role="search">
+                        <input class="form-control" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-danger" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container text-center">
+        <div class="d-flex justify-content-around align-items-center m-5">
+            <a href="index.html">
+                <button class="btn btn-dark">Voltar</button>
+            </a>
+            <div id="fundo" class="p-1 rounded">
+                <h2 class="m-5 title rounded text-white p-1">Minhas chamadas</h2>
+            </div>
+            <a href="comentarios.html">
+                <button class="btn btn-dark ">Comentários</button>
+            </a>
+        </div>
+        <form class="form d-flex justify-content-center">
+
+            <div class="card ">
+
+                <div class="card__content">
+                    <table id="tabela">
+                        <div>
+                            <thead>      
+                                <tr>
+                                    <th>ID</th>
+                                    <th>NOME</th>
+                                    <th>CPF</th>
+                                    <th>SETOR</th>
+                                    <th>STATUS</th>
+                                </tr>
+                            </thead>
+                        </div>
+                        <tbody id="dados_tabela">
+
+                        </tbody>
+                    </table>
+                </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>

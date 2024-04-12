@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Editar</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+    <link rel="shortcut icon" href="phone.png" type="image/x-icon">
+</head>
+<body>
+
+<div class="container text-center form-container" >
+    <h2 class="mt-4 title">Editar chamada</h2>
+
+    <form class="form">
+
+        <div class="input-container form-group text-center mt-5">
+            <label for="nome" class="subtitle" >Nome:</label>
+            <input placeholder="Qual o seu nome..." type="text"  id="nome" name="nome" maxlength="40" required>
+            <div class="underline"></div>
+        </div>
+        
+        <div class="input-container form-group text-center mt-5">
+          <label for="Problema" class="subtitle" >Problema:</label>
+          <input placeholder="Descreva seu problema..." type="text"  id="nome" name="nome" maxlength="100" required>
+          <div class="underline"></div>
+        </div>
+        
+        <div class="input-container form-group text-center mt-5">
+            <label for="setor" class="subtitle" >Setor:</label>
+            <input placeholder="Em qual setor você trabalha..." type="text"  id="setor" name="setor" maxlength="40" required>
+            <div class="underline"></div>
+        </div>
+        
+          <div class="d-grid gap-2 col-6 mx-auto p-2" style="width: 100px;" >
+            <button type="submit" class="btn btn-dark sign" onclick="add_problema()">Enviar</button>
+          </div>
+    </form>
+</div>
+
+</body>
+</html>
